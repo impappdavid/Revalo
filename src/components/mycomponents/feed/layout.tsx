@@ -1,5 +1,6 @@
 import Sidebar from "../sidebar"
 import Create from "./create"
+import Others from "./others"
 import Posts from "./posts"
 import Story from "./story"
 
@@ -15,7 +16,8 @@ function FeedLayout() {
                         <Create />
                         <Posts />
                     </div>
-                    <div className="w-full max-w-76 flex justify-end items-center gap-2 pr-2">
+                    <div className="w-full max-w-76 flex justify-end items-center gap-2 pl-2">
+                        <Others />
                     </div>
                 </div>
 
