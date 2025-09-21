@@ -1,4 +1,4 @@
-import { Bell, EllipsisVertical, Heart, MessageSquare, TriangleAlert } from "lucide-react"
+import { Bell, ChartNoAxesColumn, EllipsisVertical, Heart, MessageSquare, Repeat2, TriangleAlert } from "lucide-react"
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -77,7 +77,11 @@ function PostCard({
                     <img src={profilePic} alt="profile" className="w-10 h-10 rounded-full" />
                     <div className="flex flex-col">
                         <div className="text-sm font-medium">{name}</div>
-                        <div className="text-xs text-zinc-600 dark:text-zinc-400">{followers}</div>
+                        <div className="flex gap-1 items-center">
+                            <div className="text-xs text-zinc-600 dark:text-zinc-400">{followers}</div>
+                            <div className="text-xs text-zinc-600 dark:text-zinc-400">•</div>
+                            <div className="text-xs text-zinc-600 dark:text-zinc-400">{time}</div>
+                        </div>
                     </div>
                 </div>
                 <div className="flex gap-2 items-center">
@@ -118,7 +122,7 @@ function PostCard({
                                 <div className="text-xs">Not interesting</div>
                             </DropdownMenuItem>
                             <DropdownMenuItem className="px-2 py-1.5 rounded-md flex gap-2 cursor-pointer">
-                                <TriangleAlert className="w-4 h-4 text-red-500"/>
+                                <TriangleAlert className="w-4 h-4 text-red-500" />
                                 <div className="text-xs">Report</div>
                             </DropdownMenuItem>
                         </DropdownMenuContent>
@@ -133,19 +137,41 @@ function PostCard({
                 <ImageGrid images={images} />
             </div>
 
-            <div className="flex justify-between items-center px-4 pt-2 pb-4">
-                <div className="flex gap-4">
+            <div className="flex justify-between items-center px-4 pt-2 pb-4 gap-24">
+                <div className="flex justify-between gap-4 w-full px-2">
                     <div className="flex gap-1 text-zinc-600 dark:text-zinc-400 group rounded-lg cursor-pointer transition-all duration-200 items-center">
                         <Heart
-                            className={`w-5 h-5 group-hover:text-red-500   ${liked ? "text-red-500 fill-red-500 dark:text-red-500" : ""} transition-all duration-200`}
+                            className={`w-4 h-4 group-hover:text-red-500   ${liked ? "text-red-500 fill-red-500 dark:text-red-500" : ""} transition-all duration-200`}
                         />
-                        <div className="text-sm text-zinc-600 dark:text-zinc-400">{likes}</div>
+                        <div className="text-xs text-zinc-600 dark:text-zinc-400">{likes}</div>
                     </div>
                     <div className="flex gap-1 group rounded-lg text-zinc-600 dark:text-zinc-400 cursor-pointer transition-all duration-200 items-center">
-                        <MessageSquare className="w-4.5 h-4.5  group-hover:text-sky-500 transition-all duration-200" />
+                        <MessageSquare className="w-4 h-4  group-hover:text-sky-500 transition-all duration-200" />
+                        <div className="text-xs">{comments}</div>
+                    </div>
+                    <div className="flex gap-1 group rounded-lg text-zinc-600 dark:text-zinc-400 cursor-pointer transition-all duration-200 items-center">
+                        <Repeat2 className="w-4.5 h-4.5  group-hover:text-emerald-500 transition-all duration-200" />
+                        <div className="text-xs">{comments}</div>
+                    </div>
+                    <div className="flex gap-1 group rounded-lg text-zinc-600 dark:text-zinc-400 cursor-pointer transition-all duration-200 items-center">
+                        <ChartNoAxesColumn className="w-4 h-4  group-hover:text-white transition-all duration-200" />
+                        <div className="text-xs">{comments}</div>
                     </div>
                 </div>
-                <div className="text-xs text-zinc-600 dark:text-zinc-400 hover:underline">{time}</div>
+                <div className="flex gap-1 items-center">
+                    <div className="group stroke-zinc-500 dark:stroke-zinc-400 fill-none cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" className=" group-hover:stroke-blue-400 transition-all duration-200">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 17.98V9.709c0-3.634 0-5.45 1.172-6.58S8.229 2 12 2s5.657 0 6.828 1.129C20 4.257 20 6.074 20 9.708v8.273c0 2.306 0 3.459-.773 3.871c-1.497.8-4.304-1.867-5.637-2.67c-.773-.465-1.16-.698-1.59-.698s-.817.233-1.59.698c-1.333.803-4.14 3.47-5.637 2.67C4 21.44 4 20.287 4 17.981" />
+                        </svg>
+                    </div>
+                    <div className="group stroke-zinc-500 dark:stroke-zinc-400 fill-none cursor-pointer" >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" className=" group-hover:stroke-blue-400 transition-all duration-200">
+                            <path  stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2v13m4-9l-4-4l-4 4m-4 6v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
+                        </svg>
+                    </div>
+
+                </div>
+
             </div>
         </div>
     )
