@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 function Sidebar() {
     return (
         <>
-            <div className="w-full max-w-40  flex flex-col gap-0.5 fixed top-16">
+            <div className="w-full max-w-40 hidden sm:flex flex-col gap-0.5 fixed top-16 ">
                 <Link to={"/profile"} className="w-full py-1.5 px-1.5 hover:bg-zinc-200/80 dark:hover:bg-zinc-900 rounded-lg transition-all duration-200 flex items-center gap-2 cursor-pointer">
                     <CircleUser className="text-blue-500 dark:text-blue-400 w-4.5 h-4.5" />
                     <div className="text-sm">Profile</div>
