@@ -17,15 +17,15 @@ Revalo is a social super‑app MVP combining feed, clips, real‑time chat, and 
 
 ### Roadmap
 - Core
- - Feed: posts, reactions, comments, pagination.
- - Clips: short‑form video with previews and scrubbing.
- - Chat: 1‑1 real‑time messaging, online presence.
- - Profiles: editable bio, links, activity.
+  - Feed: posts, reactions, comments, pagination.
+  - Clips: short‑form video with previews and scrubbing.
+  - Chat: 1‑1 real‑time messaging, online presence.
+  - Profiles: editable bio, links, activity.
 
 - Platform
- - Auth: email/pass + OAuth providers.
- - Notifications: in‑app and push (TBD).
- - Media: uploads, thumbnails, CDN (TBD).
+  - Auth: email/pass + OAuth providers.
+  - Notifications: in‑app and push (TBD).
+  - Media: uploads, thumbnails, CDN (TBD).
 
 - Nice‑to‑have
- - Communities/spaces, moderation, analytics.
+  - Communities/spaces, moderation, analytics.
