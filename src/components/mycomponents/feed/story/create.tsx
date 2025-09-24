@@ -102,7 +102,7 @@ function CreateStory() {
 
                             </div>
                         </div>
-                        <DialogClose className="absolute -top-3 -right-14 bg-zinc-900 border text-zinc-400 hover:text-zinc-200 cursor-pointer p-2 hover:bg-zinc-800/50 rounded-xl transition-all duration-200">
+                        <DialogClose className="absolute -top-3 -right-14 bg-zinc-900 border text-zinc-400 hover:text-zinc-200 cursor-pointer p-2 hover:bg-zinc-800/50 backdrop-blur-2xl rounded-xl transition-all duration-200">
                             <X className="w-5 h-5  transition-all duration-200" />
                         </DialogClose>
                     </div>

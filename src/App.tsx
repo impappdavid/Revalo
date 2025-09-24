@@ -2,6 +2,7 @@ import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Feed from './pages/Feed';
 import { ThemeProvider } from "@/components/mycomponents/theme-provider";
+import Login from './pages/Login';
 
 function App() {
 
@@ -11,7 +12,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route>
-              <Route index element={`Hello World`} />
+              <Route index element={<Login />} />
               <Route path="feed" element={<Feed />} />
             </Route>
           </Routes>

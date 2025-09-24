@@ -57,7 +57,7 @@ function UserDropdown() {
                         </div>
                         <div className="flex flex-col">
                             <div className="">Papp David</div>
-                            <div className="text-xs font-normal text-zinc-500 dark:text-zinc-400">+36 *** **78</div>
+                            <div className="text-xs font-normal text-zinc-500 dark:text-zinc-400">im****@gmail.com</div>
                         </div>
                     </DropdownMenuLabel>
 
