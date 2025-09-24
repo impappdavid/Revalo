@@ -12,9 +12,9 @@ function Chat() {
                         </div>
                         <div className="flex gap-2 items-center">
                             <img src="/logo.png" alt="logo" className="w-8 h-8 rounded-full" />
-                            <div className="flex flex-col">
+                            <div className="flex flex-col ">
                                 <div className="text-white font-medium text-sm">Revalo</div>
-                                <div className="text-xs text-zinc-400">Service notifications</div>
+                                <div className="text-xs text-zinc-400 ">Service notifications</div>
                             </div>
 
                         </div>
