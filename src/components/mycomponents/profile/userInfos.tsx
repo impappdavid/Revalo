@@ -84,16 +84,36 @@ function UserInfos() {
                             </div>
                         </TabsContent>
                         <TabsContent value="clips">
-
+                            <div className="p-12 flex flex-col jusitfy-center items-center gap-4">
+                                <div className="text-sm text-zinc-400">You haven't added any clips yet</div>
+                                <div className="bg-blue-500 hover:bg-blue-500/80 transition-all duration-200 cursor-pointer text-white rounded-lg h-8 px-4 flex justify-center items-center">
+                                    Upload Clip
+                                </div>
+                            </div>
                         </TabsContent>
                         <TabsContent value="music">
-
+                            <div className="p-12 flex flex-col jusitfy-center items-center gap-4">
+                                <div className="text-sm text-zinc-400">You haven't added any musics yet</div>
+                                <div className="bg-blue-500 hover:bg-blue-500/80 transition-all duration-200 cursor-pointer text-white rounded-lg h-8 px-4 flex justify-center items-center">
+                                    Upload Music
+                                </div>
+                            </div>
                         </TabsContent>
                         <TabsContent value="posts">
-
+                            <div className="p-12 flex flex-col jusitfy-center items-center gap-4">
+                                <div className="text-sm text-zinc-400">You haven't created any posts yet</div>
+                                <div className="bg-blue-500 hover:bg-blue-500/80 transition-all duration-200 cursor-pointer text-white rounded-lg h-8 px-4 flex justify-center items-center">
+                                    Create Post
+                                </div>
+                            </div>
                         </TabsContent>
                         <TabsContent value="albums">
-
+                            <div className="p-12 flex flex-col jusitfy-center items-center gap-4">
+                                <div className="text-sm text-zinc-400">You haven't added any albums yet</div>
+                                <div className="bg-blue-500 hover:bg-blue-500/80 transition-all duration-200 cursor-pointer text-white rounded-lg h-8 px-4 flex justify-center items-center">
+                                    Upload Album
+                                </div>
+                            </div>
                         </TabsContent>
                     </Tabs>
                 </div>
@@ -102,7 +122,7 @@ function UserInfos() {
                     <div className="p-8 flex flex-col jusitfy-center items-center gap-2">
                         <div className="text-sm text-zinc-400">You haven't added any friends yet</div>
                         <div className=" dark:hover:bg-zinc-800 transition-all duration-200 cursor-pointer text-white rounded-lg h-8 px-4 flex justify-center items-center">
-                           Add friends
+                            Add friends
                         </div>
                     </div>
                 </div>

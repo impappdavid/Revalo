@@ -15,7 +15,7 @@ function Sidebar() {
                     </svg>
                     <div className="text-sm">News</div>
                 </Link>
-                <Link to={"/chat"} className="w-full py-1.5 px-1.5 hover:bg-zinc-200/80 dark:hover:bg-zinc-900 rounded-lg transition-all duration-200 flex items-center gap-2 cursor-pointer">
+                <Link to={"/messages"} className="w-full py-1.5 px-1.5 hover:bg-zinc-200/80 dark:hover:bg-zinc-900 rounded-lg transition-all duration-200 flex items-center gap-2 cursor-pointer">
                     <MessageCircle className="text-blue-500 dark:text-blue-400 w-4.5 h-4.5" />
                     <div className="text-sm">Messenger</div>
                 </Link>
