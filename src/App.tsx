@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/mycomponents/theme-provider";
 import Login from './pages/Login';
 import Profile from './pages/Profile';
 import Messages from './pages/Messages';
+import Message from './pages/Message';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
               <Route path="feed" element={<Feed />} />
               <Route path="profile/me" element={<Profile />} />
               <Route path="messages" element={<Messages />} />
+              <Route path="messages/:slug" element={<Message />} />
             </Route>
           </Routes>
         </BrowserRouter>

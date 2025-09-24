@@ -1,8 +1,8 @@
+import MessageFilter from "../messages/filter"
 import Sidebar from "../sidebar"
-import Chat from "./chats"
-import MessageFilter from "./filter"
+import Chat from "./chat"
 
-function MessagesLayout() {
+function ChatLayout() {
     return (
         <>
             <div className="w-full flex justify-center dark:bg-zinc-950 bg-zinc-100 h-full">
@@ -22,4 +22,4 @@ function MessagesLayout() {
         </>
     )
 }
-export default MessagesLayout
+export default ChatLayout
