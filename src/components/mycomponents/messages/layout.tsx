@@ -12,7 +12,7 @@ function MessagesLayout() {
                     <div className="flex flex-col w-full">
                         <Chat />
                     </div>
-                    <div className="w-full max-w-76 hidden sm:flex justify-end items-center gap-2 pl-2">
+                    <div className="w-full max-w-50 lg:max-w-76 hidden sm:flex justify-end items-center gap-2 pl-2">
                         <MessageFilter />
                     </div>
                 </div>

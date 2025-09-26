@@ -6,6 +6,7 @@ import Login from './pages/Login';
 import Profile from './pages/Profile';
 import Messages from './pages/Messages';
 import Message from './pages/Message';
+import Communities from './pages/Communities';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
               <Route path="profile/me" element={<Profile />} />
               <Route path="messages" element={<Messages />} />
               <Route path="messages/:slug" element={<Message />} />
+              <Route path="communities" element={<Communities />} />
             </Route>
           </Routes>
         </BrowserRouter>

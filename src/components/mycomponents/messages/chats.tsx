@@ -48,7 +48,7 @@ function Chat() {
 
                         </TabsList>
                         <TabsContent value="all" >
-                            <Link to={"/messages/revalo"} className="p-2 w-full group  hover:bg-zinc-800/80 rounded-lg cursor-pointer transition-all duration-200 ">
+                            <div className="p-2 w-full group  hover:bg-zinc-800/80 rounded-lg cursor-pointer transition-all duration-200 ">
                                 <div className="flex gap-2 items-center">
                                     <img src="/logo.png" alt="logo" className="w-10 h-10 rounded-full" />
                                     <div className="flex flex-col w-full">
@@ -62,7 +62,7 @@ function Chat() {
                                         </div>
                                     </div>
                                 </div>
-                            </Link>
+                            </div>
                         </TabsContent>
                         <TabsContent value="channels">
                             <div className="p-12 flex flex-col jusitfy-center items-center gap-4">
