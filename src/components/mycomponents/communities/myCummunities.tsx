@@ -8,7 +8,7 @@ function MyCommunities(){
                         <img src="/logo.png" alt="logo" className="w-10 h-10 rounded-full"/>  
                         <div className="flex flex-col">
                             <div className="font-medium">Revalo</div>
-                            <div className="text-xs text-zinc-400">100k member</div>
+                            <div className="text-xs text-zinc-400">84.5k member</div>
                         </div>  
                     </div>    
                 </div>
