@@ -9,9 +9,9 @@ import {
 function UserInfos() {
     return (
         <>
-            <div className="w-full bg-zinc-900 rounded-2xl border">
-                <div className="h-50 bg-gradient-to-bl from-zinc-800 to-zinc-700 rounded-2xl flex justify-end p-4">
-                    <div className="flex gap-1.5 items-center bg-black/50 h-fit p-2 px-4 rounded-lg text-sm text-white font-medium cursor-pointer hover:opacity-80 transition-all duration-200">
+            <div className="w-full bg-white dark:bg-zinc-900 rounded-3xl border">
+                <div className="h-50 bg-gradient-to-bl from-zinc-300 dark:from-zinc-800 to-zinc-200 dark:to-zinc-700 rounded-2xl flex justify-end p-4">
+                    <div className="flex gap-1.5 items-center bg-zinc-400/80 dark:bg-black/50 h-fit p-2 px-4 rounded-lg text-sm text-white font-medium cursor-pointer hover:opacity-80 transition-all duration-200">
                         <Pen className="w-4 h-4" />
                         Change Cover
                     </div>
@@ -35,7 +35,7 @@ function UserInfos() {
 
             </div>
             <div className="grid grid-cols-3 gap-2">
-                <div className="bg-zinc-900 p-2 rounded-2xl col-span-2 border border-zinc-800">
+                <div className="bg-white dark:bg-zinc-900 p-2 rounded-2xl col-span-2 border dark:border-zinc-800">
                     <Tabs defaultValue="photos">
                         <TabsList>
                             <TabsTrigger value="photos">
@@ -117,11 +117,11 @@ function UserInfos() {
                         </TabsContent>
                     </Tabs>
                 </div>
-                <div className="bg-zinc-900 px-3 p-2 rounded-2xl border border-zinc-800">
-                    <div className="text-white font-medium">Friends</div>
+                <div className="bg-white dark:bg-zinc-900 px-3 p-2 rounded-2xl border dark:border-zinc-800">
+                    <div className="dark:text-white font-medium">Friends</div>
                     <div className="p-8 flex flex-col jusitfy-center items-center gap-2">
-                        <div className="text-sm text-zinc-400">You haven't added any friends yet</div>
-                        <div className=" dark:hover:bg-zinc-800 transition-all duration-200 cursor-pointer text-white rounded-lg h-8 px-4 flex justify-center items-center">
+                        <div className="text-sm text-zinc-600 dark:text-zinc-400">You haven't added any friends yet</div>
+                        <div className="hover:bg-zinc-300/60 dark:hover:bg-zinc-800 transition-all duration-200 cursor-pointer dark:text-white rounded-lg h-8 px-4 flex justify-center items-center">
                             Add friends
                         </div>
                     </div>
