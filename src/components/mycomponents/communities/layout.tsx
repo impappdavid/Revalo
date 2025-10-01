@@ -1,7 +1,6 @@
 import Sidebar from "../sidebar"
 import CommunityList from "./comunityList"
 import CreateCommunity from "./createCommunity"
-import MyCommunities from "./myCummunities"
 
 function CommunitiesLayout() {
     return (
@@ -13,7 +12,7 @@ function CommunitiesLayout() {
                     <div className="flex flex-col w-full">
                         <CommunityList />
                     </div>
-                    <div className="w-full max-w-50 lg:max-w-76 hidden sm:flex justify-end items-center gap-2 pl-2 flex-col">
+                    <div className="w-full lg:max-w-76 hidden lg:flex justify-end items-center gap-2 pl-2 flex-col">
                         <CreateCommunity />
                         
                     </div>

@@ -3,12 +3,13 @@ import { ExternalLink, Users } from "lucide-react"
 function CommunityList() {
     return (
         <>
+        
             <div className="bg-zinc-900 border p-4 rounded-2xl flex flex-col gap-4">
                 <div className="flex justify-between w-full items-center px-1">
                     <div className="font-medium text-xl">For you</div>
                     <div className="text-sm text-blue-400 hover:underline cursor-pointer">Show all</div>
                 </div>
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 auto-rows-fr items-stretch">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-2 auto-rows-fr items-stretch">
 
                     <div className="flex flex-col h-full">
                         <div className="min-h-14 rounded-t-2xl bg-blue-600">
