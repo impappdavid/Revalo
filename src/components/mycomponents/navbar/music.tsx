@@ -39,7 +39,7 @@ function MusicPlayer() {
                         <div className="flex flex-col w-full gap-1">
                             <div className="flex justify-between items-center">
                                 <div className="flex gap-2 items-center">
-                                    <img src="/images/music.jpg" alt="" className="w-10 h-10 rounded-lg border" />
+                                    <img src="/images/music.jpg" alt="sorry.png" loading="lazy" className="w-10 h-10 rounded-lg border" />
                                     <div className="flex flex-col">
                                         <div className="text-sm font-medium">Sorry</div>
                                         <div className="text-xs text-zinc-600 dark:text-zinc-400">The Kid Laroi</div>
@@ -74,7 +74,7 @@ function MusicPlayer() {
                         <div className="p-1.5 flex justify-between group items-center gap-4 bg-zinc-200/60 dark:bg-zinc-800 transition-all duration-200 cursor-pointer" onClick={() => setIsPlaying(!isPlaying)}>
                             <div className="flex gap-2">
                                 <div className="relative rounded-lg">
-                                    <img src="images/music.jpg" alt="" className="w-10 h-10 rounded-lg border" />
+                                    <img src="images/music.jpg" alt="sorry.png" loading="lazy" className="w-10 h-10 rounded-lg border" />
                                     <div className="absolute opacity-0 group-hover:opacity-100 w-6 h-6 bg-white rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center hover:scale-102 transition-all duration-200" >
                                         {isPlaying ? <Pause className="w-3 h-3 fill-black text-black transition-all duration-200" /> :
                                             <Play className="h-3 w-3 fill-black" />
@@ -95,7 +95,7 @@ function MusicPlayer() {
                         <div className="p-1.5 flex justify-between group items-center gap-4 transition-all duration-200 cursor-pointer" onClick={() => setIsPlaying(!isPlaying)}>
                             <div className="flex gap-2">
                                 <div className="relative rounded-lg">
-                                    <img src="images/music1.jpg" alt="" className="w-10 h-10 rounded-lg border" />
+                                    <img src="images/music1.jpg" alt="Wow..png" loading="lazy" className="w-10 h-10 rounded-lg border" />
                                     <div className="absolute opacity-0 group-hover:opacity-100 w-6 h-6 bg-white rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center hover:scale-102 transition-all duration-200" >
                                         {isPlaying ? <Pause className="w-3.5 h-3.5 fill-black text-black transition-all duration-200" /> :
                                             <Play className="h-3 w-3 fill-black" />
@@ -117,7 +117,7 @@ function MusicPlayer() {
                     <div className="p-1.5 flex justify-between group items-center gap-4 transition-all duration-200 cursor-pointer" onClick={() => setIsPlaying(!isPlaying)}>
                         <div className="flex gap-2">
                             <div className="relative rounded-lg">
-                                <img src="images/music4.jpg" alt="" className="w-10 h-10 rounded-lg border" />
+                                <img src="images/music4.jpg" alt="cannonball.png" loading="lazy" className="w-10 h-10 rounded-lg border" />
                                 <div className="absolute opacity-0 group-hover:opacity-100 w-6 h-6 bg-white rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center hover:scale-102 transition-all duration-200" >
                                     {isPlaying ? <Pause className="w-3 h-3 fill-black text-black transition-all duration-200" /> :
                                         <Play className="h-3 w-3 fill-black" />
@@ -138,7 +138,7 @@ function MusicPlayer() {
                     <div className="p-1.5 flex justify-between group items-center gap-4 transition-all duration-200 cursor-pointer" onClick={() => setIsPlaying(!isPlaying)}>
                         <div className="flex gap-2">
                             <div className="relative rounded-lg">
-                                <img src="images/music5.jpg" alt="" className="w-10 h-10 rounded-lg border" />
+                                <img src="images/music5.jpg" alt="halftheplot" loading="lazy" className="w-10 h-10 rounded-lg border" />
                                 <div className="absolute opacity-0 group-hover:opacity-100 w-6 h-6 bg-white rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center hover:scale-102 transition-all duration-200" >
                                     {isPlaying ? <Pause className="w-3 h-3 fill-black text-black transition-all duration-200" /> :
                                         <Play className="h-3 w-3 fill-black" />
