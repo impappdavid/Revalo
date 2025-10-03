@@ -33,6 +33,7 @@ function ImageGrid({ images }: { images: string[] }) {
                         <img
                             src={src.startsWith("/") ? src : `/${src}`}
                             alt=""
+                            loading="lazy"
                             className={`object-cover cursor-pointer ${display.length === 1 ? "" : "aspect-square"} w-full h-full ${shouldOverlay ? "blur-[1px]" : ""}`}
                         />
                         {shouldOverlay && (
@@ -74,7 +75,7 @@ function PostCard({
         <div className="flex flex-col  gap-2">
             <div className="flex gap-2 pt-3 px-3 pb-2 items-center justify-between">
                 <div className="flex gap-2 items-center">
-                    <img src={profilePic} alt="profile" className="w-10 h-10 rounded-full" />
+                    <img src={profilePic} alt="profile" loading="lazy" className="w-10 h-10 rounded-full" />
                     <div className="flex flex-col">
                         <div className="text-sm font-medium">{name}</div>
                         <div className="flex gap-1 items-center">
