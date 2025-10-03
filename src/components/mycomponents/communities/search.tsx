@@ -6,7 +6,7 @@ function SearchCommunities() {
     const [searchValue, setSearchValue] = useState("");
     return (
         <>
-            <div className="p-2 bg-zinc-900 border rounded-2xl flex">
+            <div className="p-2 bg-white dark:bg-zinc-900 border rounded-2xl flex">
                 <div className="relative">
                     <Search className="pointer-events-none absolute left-2 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-muted-foreground" />
                     <Input
