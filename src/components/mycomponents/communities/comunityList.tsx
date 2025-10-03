@@ -11,9 +11,9 @@ function CommunityList() {
                 </div>
                 <div className="flex flex-col gap-2">
 
-                    <div className="p-2 flex justify-between border rounded-2xl">
+                    <div className="p-2 flex justify-between items-center border rounded-2xl">
                         <div className="flex gap-2 items-center">
-                            <img src="/logo.png" alt="logo" className="w-14 h-14 rounded-xl" />
+                            <img src="/logo.png" alt="logo" className="w-12 h-12 rounded-xl" />
                             <div className="flex flex-col">
                                 <div className="flex gap-2 items-center">
                                     <div className="text-xl">Revalo</div>
@@ -24,12 +24,12 @@ function CommunityList() {
                                 </div>
                             </div>
                         </div>
-                        <div className=" flex justify-center items-center bg-blue-500 w-16 h-14 text-white cursor-pointer hover:bg-blue-500/80 transition-all duration-200 rounded-xl">Join</div>
+                        <div className=" flex justify-center items-center bg-blue-500 w-16 h-12 text-white cursor-pointer hover:bg-blue-500/80 transition-all duration-200 rounded-xl">Join</div>
                     </div>
 
-                    <div className="p-2 flex justify-between border rounded-2xl">
+                    <div className="p-2 flex justify-between items-center border rounded-2xl">
                         <div className="flex gap-2 items-center">
-                            <img src="/logo.png" alt="logo" className="w-14 h-14 rounded-xl" />
+                            <img src="/logo.png" alt="logo" className="w-12 h-12 rounded-xl" />
                             <div className="flex flex-col">
                                 <div className="flex gap-2 items-center">
                                     <div className="text-xl">RevaloPlus</div>
@@ -40,7 +40,7 @@ function CommunityList() {
                                 </div>
                             </div>
                         </div>
-                        <div className=" flex justify-center items-center bg-red-500 w-16 h-14 text-white cursor-pointer hover:bg-red-500/80 transition-all duration-200 rounded-xl">Leave</div>
+                        <div className=" flex justify-center items-center bg-red-500 w-16 h-12 text-white cursor-pointer hover:bg-red-500/80 transition-all duration-200 rounded-xl">Leave</div>
                     </div>
 
 
