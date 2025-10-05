@@ -8,6 +8,7 @@ import Messages from './pages/Messages';
 import Message from './pages/Message';
 import Communities from './pages/Communities';
 import Photos from './pages/Photos';
+import Clips from './pages/Clips';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
               <Route path="messages/:slug" element={<Message />} />
               <Route path="communities" element={<Communities />} />
               <Route path="photos" element={<Photos />} />
+              <Route path="clips" element={<Clips />} />
             </Route>
           </Routes>
         </BrowserRouter>
