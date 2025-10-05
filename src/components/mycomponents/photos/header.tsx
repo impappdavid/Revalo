@@ -36,8 +36,8 @@ function Header() {
                                 Albums
                             </TabsTrigger>
                         </TabsList>
-                        <TabsContent value="photos" >
-                            <div className="p-12 flex flex-col jusitfy-center items-center gap-4">
+                        <TabsContent value="photos" className="bg-zinc-800 rounded-2xl p-6">
+                            <div className=" flex flex-col jusitfy-center items-center gap-4">
                                 <div className="text-sm text-zinc-400">You haven't added any photos yet</div>
                                 <div className="bg-blue-500 hover:bg-blue-500/80 transition-all duration-200 cursor-pointer text-white rounded-lg h-8 px-4 flex justify-center items-center">
                                     Upload Photo

@@ -1,45 +1,77 @@
+import React, { useState, useMemo } from "react";
 import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuLabel,
     DropdownMenuSeparator,
     DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-import { Slider } from "@/components/ui/slider"
-import { Pause, Play, Plus, Repeat, Shuffle, SkipBack, SkipForward, Volume, Volume1, Volume2, VolumeX } from "lucide-react"
-import { useState } from "react";
+} from "@/components/ui/dropdown-menu";
+import { Slider } from "@/components/ui/slider";
+import {
+    Pause,
+    Play,
+    Plus,
+    Repeat,
+    Shuffle,
+    SkipBack,
+    SkipForward,
+    Volume,
+    Volume1,
+    Volume2,
+    VolumeX,
+} from "lucide-react";
 
 function MusicPlayer() {
     const [isPlaying, setIsPlaying] = useState(false);
     const [volume, setVolume] = useState(30);
+
+    // Memoize volume icon rendering
+    const VolumeIcon = useMemo(() => {
+        if (volume === 0) return <VolumeX className="w-4 h-4" />;
+        if (volume < 30) return <Volume className="w-4 h-4" />;
+        if (volume < 70) return <Volume1 className="w-4 h-4" />;
+        return <Volume2 className="w-4 h-4" />;
+    }, [volume]);
+
     return (
         <>
             <DropdownMenu>
-                <DropdownMenuTrigger asChild >
+                <DropdownMenuTrigger asChild>
                     <div className="p-1.5 px-4 hidden md:flex justify-between items-center gap-4 hover:bg-zinc-200/60 dark:hover:bg-zinc-800 rounded-lg transition-all duration-200 cursor-pointer">
                         <div className="flex gap-2 items-center">
                             <SkipBack className="w-4 h-4 fill-zinc-400 text-zinc-400 hover:fill-blue-400 hover:text-blue-400 transition-all duration-200" />
                             {isPlaying ? (
-                                <Pause className="w-4 h-4 fill-zinc-400 text-zinc-400 hover:fill-blue-400 hover:text-blue-400 transition-all duration-200" onClick={() => { setIsPlaying(!isPlaying) }} />
+                                <Pause
+                                    className="w-4 h-4 fill-zinc-400 text-zinc-400 hover:fill-blue-400 hover:text-blue-400 transition-all duration-200"
+                                    onClick={() => setIsPlaying(!isPlaying)}
+                                />
                             ) : (
-                                <Play className="w-4 h-4 fill-zinc-400 text-zinc-400 hover:fill-blue-400 hover:text-blue-400 transition-all duration-200" onClick={() => { setIsPlaying(!isPlaying) }} />
+                                <Play
+                                    className="w-4 h-4 fill-zinc-400 text-zinc-400 hover:fill-blue-400 hover:text-blue-400 transition-all duration-200"
+                                    onClick={() => setIsPlaying(!isPlaying)}
+                                />
                             )}
                             <SkipForward className="w-4 h-4 fill-zinc-400 text-zinc-400 hover:fill-blue-400 hover:text-blue-400 transition-all duration-200" />
                         </div>
                         <div className="flex gap-2 items-center">
                             <div className="text-xs font-medium">Sorry</div>
-                            <div className="">-</div>
+                            <div>-</div>
                             <div className="text-xs text-zinc-600 dark:text-zinc-400">The Kid Laroi</div>
                         </div>
                     </div>
                 </DropdownMenuTrigger>
-                <DropdownMenuContent className="w-2xl max-w-screen-sm rounded-b-xl mt-0.5" align="end" >
-                    <DropdownMenuLabel className="w-full flex justify-between px-3 py-2 gap-2 items-center border-b">
 
+                <DropdownMenuContent className="w-2xl max-w-screen-sm rounded-b-xl mt-0.5" align="end">
+                    <DropdownMenuLabel className="w-full flex justify-between px-3 py-2 gap-2 items-center border-b">
                         <div className="flex flex-col w-full gap-1">
                             <div className="flex justify-between items-center">
                                 <div className="flex gap-2 items-center">
-                                    <img src="/images/music.jpg" alt="sorry.png" loading="lazy" className="w-10 h-10 rounded-lg border" />
+                                    <img
+                                        src="/images/music.jpg"
+                                        alt="sorry.png"
+                                        loading="lazy"
+                                        className="w-10 h-10 rounded-lg border"
+                                    />
                                     <div className="flex flex-col">
                                         <div className="text-sm font-medium">Sorry</div>
                                         <div className="text-xs text-zinc-600 dark:text-zinc-400">The Kid Laroi</div>
@@ -51,12 +83,18 @@ function MusicPlayer() {
                                         <Shuffle className="w-4 h-4 text-zinc-400 hover:text-zinc-300" />
                                         <Repeat className="w-4 h-4 text-zinc-400 hover:text-zinc-300" />
                                     </div>
-                                    <div className="flex gap-2 items-center ">
+                                    <div className="flex gap-2 items-center">
                                         <SkipBack className="w-4 h-4 fill-zinc-400 text-zinc-400 hover:fill-blue-400 hover:text-blue-400 transition-all duration-200" />
                                         {isPlaying ? (
-                                            <Pause className="w-4 h-4 fill-zinc-400 text-zinc-400 hover:fill-blue-400 hover:text-blue-400 transition-all duration-200" onClick={() => { setIsPlaying(!isPlaying) }} />
+                                            <Pause
+                                                className="w-4 h-4 fill-zinc-400 text-zinc-400 hover:fill-blue-400 hover:text-blue-400 transition-all duration-200"
+                                                onClick={() => setIsPlaying(!isPlaying)}
+                                            />
                                         ) : (
-                                            <Play className="w-4 h-4 fill-zinc-400 text-zinc-400 hover:fill-blue-400 hover:text-blue-400 transition-all duration-200" onClick={() => { setIsPlaying(!isPlaying) }} />
+                                            <Play
+                                                className="w-4 h-4 fill-zinc-400 text-zinc-400 hover:fill-blue-400 hover:text-blue-400 transition-all duration-200"
+                                                onClick={() => setIsPlaying(!isPlaying)}
+                                            />
                                         )}
                                         <SkipForward className="w-4 h-4 fill-zinc-400 text-zinc-400 hover:fill-blue-400 hover:text-blue-400 transition-all duration-200" />
                                     </div>
@@ -155,17 +193,11 @@ function MusicPlayer() {
                             <div className="text-xs text-zinc-600 dark:text-zinc-400 pr-1.5">2:46</div>
                         </div>
                     </div>
+
                     <DropdownMenuSeparator />
-                    <div className="text-xs text-zinc-600 dark:text-zinc-400 flex items-center gap-2 dark:text-zinc-400 py-2.5 px-3.5  transition-all duration-200">
-                        {volume === 0 ? (
-                            <VolumeX className="w-4 h-4" />
-                        ) : volume < 30 ? (
-                            <Volume className="w-4 h-4" />
-                        ) : volume < 70 ? (
-                            <Volume1 className="w-4 h-4" />
-                        ) : (
-                            <Volume2 className="w-4 h-4" />
-                        )}
+
+                    <div className="text-xs text-zinc-600 dark:text-zinc-400 flex items-center gap-2 dark:text-zinc-400 py-2.5 px-3.5 transition-all duration-200">
+                        {VolumeIcon}
                         <Slider
                             value={[volume]}
                             max={100}
@@ -177,6 +209,7 @@ function MusicPlayer() {
                 </DropdownMenuContent>
             </DropdownMenu>
         </>
-    )
+    );
 }
+
 export default MusicPlayer;

@@ -66,6 +66,8 @@ function CommunityCard() {
                     <div className="py-1 flex justify-center items-center bg-white text-black rounded-lg text-sm font-medium hover:bg-white/80 transition-all duration-200 cursor-pointer">Follow</div>
                 </div>
             </div>
+
+            
         </>
     )
 }
