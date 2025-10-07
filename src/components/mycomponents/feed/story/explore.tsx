@@ -23,7 +23,7 @@ function ExploreStories() {
                 </DialogTrigger>
                 <DialogContent className="sm:max-w-xl max-w-lg">
                     <div className="relative flex flex-col gap-4">
-                        <div className="flex justify-center w-full items-center py-4 pb-4 rounded-xl bg-zinc-800/80">
+                        <div className="flex justify-center w-full items-center py-4 pb-4 rounded-xl bg-zinc-200/60 dark:bg-zinc-800/80">
                             <div className="text-2xl font-medium">Explore Stories</div>
                         </div>
                         <div className="grid grid-cols-4 gap-1 h-[650px]">
@@ -76,7 +76,7 @@ function ExploreStories() {
                             </div>
 
                         </div>
-                        <DialogClose className="absolute -top-3 -right-14 bg-zinc-900 border text-zinc-400 hover:text-zinc-200 cursor-pointer p-2 hover:bg-zinc-800/50 backdrop-blur-2xl rounded-xl transition-all duration-200">
+                        <DialogClose className="absolute -top-3 -right-14 bg-zinc-100 dark:bg-zinc-900 border text-zinc-400 hover:bg-zinc-200 hover:text-zinc-600 dark:hover:text-zinc-200 cursor-pointer p-2 dark:hover:bg-zinc-800/50 backdrop-blur-2xl rounded-xl transition-all duration-200">
                             <X className="w-5 h-5  transition-all duration-200" />
                         </DialogClose>
                     </div>

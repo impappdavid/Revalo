@@ -34,16 +34,16 @@ function Chat() {
                         <div className="flex flex-col">
                             <div className="font-medium text-blue-400">Revalo</div>
                             <div className="text-sm text-zinc-700 dark:text-zinc-200">
-                                Bejelentkezett a fiókjába: Papp David
+                                You logged in your account: Papp David
                                 <br />
                                 <div className="h-4"></div>
-                                Bejelentkezés dátuma: 2025 szeptember 19., 0:30-kor
+                                Logged in at: 2025 september 19. 0:30
                                 <br />
-                                Készülék: Chrome böngészővel
+                                Browser: Chrome
                                 <br />
-                                Szolgáltatás: "Revalo" honlap
+                                Service: "Revalo" website
                                 <br />
-                                Geopozíció: Budapest. Ha nem Ön, kérjük, azonnal változtassa meg jelszavát.
+                                Location: Budapest. If it's not you, please change your password.
                             </div>
                         </div>
                     </div>
