@@ -1,4 +1,4 @@
-import { BadgeCheck, ExternalLink, Users } from "lucide-react"
+import { BadgeCheck } from "lucide-react"
 
 function CommunityList() {
     return (
