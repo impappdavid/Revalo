@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Checkbox } from "@/components/ui/checkbox"
-import { Eye, EyeOff, Mail, X, Lock, CircleAlert, CircleQuestionMark } from "lucide-react"
+import { Eye, EyeOff, Mail, Lock, CircleAlert, CircleQuestionMark } from "lucide-react"
 import { useState } from "react"
 
 import { useNavigate } from "react-router-dom"
@@ -27,12 +27,6 @@ function LoginForm() {
         setLoading(true);
         setError(null);
 
-
-        const signInData = {
-            email,
-            password,
-        }
-
         try {
             navigate('/feed')
             // Clear form
@@ -50,7 +44,7 @@ function LoginForm() {
             <div className="bg-white dark:bg-zinc-900/60 w-full sm:w-96 p-3 py-3 mt-3 sm:mt-0 sm:border border-zinc-200 dark:border-zinc-800/70 rounded-3xl flex flex-col gap-4 sm:items-center">
                 <div className="flex justify-between w-full items-center">
 
-                    <div className="p-1 hover:bg-zinc-300/80 dark:hover:bg-zinc-800/40 rounded-lg transition-all duration-500">
+                    <div className="p-1 hover:bg-zinc-300/80 dark:hover:bg-zinc-800/60 rounded-lg transition-all duration-200">
                         <img src="/logo.png" alt="logo" className="w-6 h-6 rounded-sm" />
                     </div>
 
@@ -58,7 +52,7 @@ function LoginForm() {
                         Sign In
                     </div>
 
-                    <div className="p-1 hover:bg-zinc-300/80 dark:hover:bg-zinc-800/40 rounded-lg text-zinc-600 dark:text-zinc-400 transition-all duration-500">
+                    <div className="p-1 hover:bg-zinc-300/80 dark:hover:bg-zinc-800/60 rounded-lg text-zinc-600 dark:text-zinc-400 transition-all duration-200">
                         <a href="../" className="">
                             <CircleQuestionMark className="w-5 h-5 " />
                         </a>
@@ -99,7 +93,7 @@ function LoginForm() {
                                     type="button"
                                     variant="ghost"
                                     size="icon"
-                                    className="absolute inset-y-0.5 pr-2 right-0 flex items-center justify-center hover:bg-transparent text-zinc-600 dark:text-zinc-400 hover:text-black dark:hover:text-white"
+                                    className="absolute inset-y-0.5 pr-2 right-0 flex items-center justify-center hover:bg-transparent dark:hover:bg-transparent cursor-pointer text-zinc-600 dark:text-zinc-400 hover:text-black dark:hover:text-white"
                                     onClick={togglePasswordVisibility}
                                     aria-label={showPassword ? "Hide password" : "Show password"}
                                 >
@@ -120,7 +114,7 @@ function LoginForm() {
                                 <Checkbox id="terms" className="border-blue-500"/>
                                 <Label htmlFor="terms" className="text-xs text-zinc-600 dark:text-zinc-400 cursor-pointer">Remember me</Label>
                             </div>
-                            <a href="" className="text-zinc-400 text-xs text-zinc-600 dark:text-zinc-400 hover:underline transition-all duration-500">Forgot password?</a>
+                            <a href="" className="text-zinc-400 text-xs text-zinc-600 dark:text-zinc-400 hover:underline">Forgot password?</a>
                         </div>
                         <Button
                             disabled={loading}
@@ -128,11 +122,11 @@ function LoginForm() {
                                 e.preventDefault();
                                 handleSubmit(e); // still call the async logic
                             }}
-                            className="rounded-xl h-10 bg-blue-500 hover:bg-blue-500/80 transition-all duration-300 cursor-pointer text-white">
+                            className="rounded-xl h-10 bg-blue-500 hover:bg-blue-500/80 transition-all duration-200 cursor-pointer text-white">
                             {loading ? 'Signing In...' : 'Sign In'}
                         </Button>
                         <div className="flex justify-center w-full mt-2">
-                            <div className="text-xs text-zinc-600 dark:text-zinc-400">Don't have an account? <a href="./signup" className="text-blue-500 dark:text-blue-400">Sign Up</a></div>
+                            <div className="text-xs text-zinc-600 dark:text-zinc-400">Don't have an account? <a href="./signup" className="text-blue-500 dark:text-blue-400 hover:underline">Sign Up</a></div>
                         </div>
                     </form>
                 </div>
