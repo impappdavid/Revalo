@@ -2,9 +2,7 @@ import { Bell, ChartNoAxesColumn, EllipsisVertical, Heart, MessageSquare, Repeat
 import {
     DropdownMenu,
     DropdownMenuContent,
-    DropdownMenuGroup,
     DropdownMenuItem,
-    DropdownMenuLabel,
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
