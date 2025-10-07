@@ -1,4 +1,4 @@
-import { CircleQuestionMark, CircleUser, GalleryVerticalEnd, Gamepad2, MessageCircle, Phone, Users } from "lucide-react"
+import { CircleQuestionMark, CircleUser, GalleryVerticalEnd, Gamepad2, MessageCircle, Users } from "lucide-react"
 import { Link } from "react-router-dom"
 
 function Sidebar() {

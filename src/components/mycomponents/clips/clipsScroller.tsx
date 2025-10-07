@@ -31,7 +31,7 @@ export default function ClipScroller() {
 
     // Toggle play/pause for current video
     function togglePlayPause() {
-        setIsPlaying(true);
+        
         const video = videoRefs.current[current];
         if (!video) return;
         if (video.paused) video.play();
@@ -44,8 +44,10 @@ export default function ClipScroller() {
         if (!video) return;
 
         function handlePlay() {
+            setIsPlaying(true);
         }
         function handlePause() {
+            setIsPlaying(false);
         }
 
         video.addEventListener("play", handlePlay);
@@ -240,7 +242,7 @@ export default function ClipScroller() {
             </div>
 
             <div className="absolute bottom-4 left-4 flex flex-col gap-1">
-                <div className="text-lg font-medium hover:underline cursor-pointer">{currentClip.username}</div>
+                <div className="text-lg font-medium hover:underline text-white cursor-pointer">{currentClip.username}</div>
 
                 <div className="flex gap-1">
                     {currentClip.tags.map((item, index) => (
