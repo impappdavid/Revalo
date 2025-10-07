@@ -8,7 +8,7 @@ import {
 function Header() {
     return (
         <>
-            <div className="p-6 bg-zinc-900 border rounded-3xl flex flex-col gap-2">
+            <div className="p-6 bg-white dark:bg-zinc-900 border rounded-3xl flex flex-col gap-2">
                 <div className="font-semibold text-xl">My Photos</div>
 
                 <div className="flex justify-between items-center w-full">
@@ -36,9 +36,9 @@ function Header() {
                                 Albums
                             </TabsTrigger>
                         </TabsList>
-                        <TabsContent value="photos" className="bg-zinc-800 rounded-2xl p-6">
+                        <TabsContent value="photos" className=" rounded-2xl p-6">
                             <div className=" flex flex-col jusitfy-center items-center gap-4">
-                                <div className="text-sm text-zinc-400">You haven't added any photos yet</div>
+                                <div className="text-sm text-zinc-600 dark:text-zinc-400">You haven't added any photos yet</div>
                                 <div className="bg-blue-500 hover:bg-blue-500/80 transition-all duration-200 cursor-pointer text-white rounded-lg h-8 px-4 flex justify-center items-center">
                                     Upload Photo
                                 </div>
@@ -47,7 +47,7 @@ function Header() {
                         
                         <TabsContent value="albums">
                             <div className="p-12 flex flex-col jusitfy-center items-center gap-4">
-                                <div className="text-sm text-zinc-400">You don1t have any albums yet</div>
+                                <div className="text-sm text-zinc-600 dark:text-zinc-400">You don't have any albums yet</div>
                                 <div className="bg-blue-500 hover:bg-blue-500/80 transition-all duration-200 cursor-pointer text-white rounded-lg h-8 px-4 flex justify-center items-center">
                                     Create Album
                                 </div>
