@@ -9,6 +9,7 @@ import Message from './pages/Message';
 import Communities from './pages/Communities';
 import Photos from './pages/Photos';
 import Clips from './pages/Clips';
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
           </Routes>
         </BrowserRouter>
       </ThemeProvider>
+      <Analytics />
     </>
   )
 }
