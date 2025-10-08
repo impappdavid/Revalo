@@ -10,6 +10,7 @@ import Communities from './pages/Communities';
 import Photos from './pages/Photos';
 import Clips from './pages/Clips';
 import { Analytics } from "@vercel/analytics/react"
+import Music from './pages/Music';
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
               <Route path="communities" element={<Communities />} />
               <Route path="photos" element={<Photos />} />
               <Route path="clips" element={<Clips />} />
+              <Route path="music" element={<Music />} />
             </Route>
           </Routes>
         </BrowserRouter>
