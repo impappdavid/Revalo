@@ -3,10 +3,10 @@ import { Link } from "react-router-dom"
 function MyMusics() {
     return (
         <>
-            <div className="p-4 bg-zinc-900 border rounded-2xl flex flex-col gap-2">
+            <div className="p-4 bg-white dark:bg-zinc-900 border rounded-2xl flex flex-col gap-2">
                 <div className="flex justify-between items-center">
                     <div className="font-medium">Your Library</div>
-                    <Link to={"/"} className="text-sm text-blue-400 hover:underline">View All</Link>
+                    <Link to={"/"} className="text-sm text-blue-500 dark:text-blue-400 hover:underline">View All</Link>
                 </div>
 
                 <div className="grid grid-cols-8 gap-2">
