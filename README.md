@@ -1,6 +1,8 @@
 # Revalo - Social Super‑App MVP
 Revalo is a social super‑app MVP combining feed, clips, real‑time chat, and profiles into a cohesive, community‑driven experience.
 
+More info: [pappdavid.com/projects/revalo](https://www.pappdavid.com/projects/revalo).
+
 <img src="./public/feed.png" alt="Revalo feed" width="100%" />
 
 ### Highlights
