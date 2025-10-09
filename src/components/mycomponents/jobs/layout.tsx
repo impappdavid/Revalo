@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Sidebar from "../sidebar";
 import type { Job } from "./types";
 import JobList from "./jobList";
@@ -30,7 +29,6 @@ const jobs: Job[] = [
 ];
 
 function JobsLayout() {
-    const [selectedJob, setSelectedJob] = useState<Job | null>(jobs[0] || null);
 
     return (
         <div className="w-full flex justify-center dark:bg-zinc-950 bg-zinc-100 h-full">
@@ -38,7 +36,7 @@ function JobsLayout() {
                 <Sidebar />
                 <div className="w-full hidden sm:flex max-w-40"></div>
                 <div className="flex flex-col gap-4 w-full">
-                    <JobList jobs={jobs} onSelect={setSelectedJob} selectedJob={selectedJob}/>
+                    <JobList jobs={jobs} />
                 </div>
                 <div className="w-full lg:max-w-76 hidden lg:flex items-center gap-2 flex-col">
                     <JobFilter />

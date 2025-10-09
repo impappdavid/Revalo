@@ -4,14 +4,12 @@ import { Settings } from "lucide-react";
 
 interface JobListProps {
     jobs: Job[];
-    onSelect: (job: Job) => void;
-    selectedJob: Job | null;
 }
 
-function JobList({ jobs, onSelect, selectedJob }: JobListProps) {
+function JobList({ jobs }: JobListProps) {
     return (
         <div className="bg-white dark:bg-zinc-900 border h-[900px] flex flex-col rounded-2xl overflow-y-scroll">
-            <div className="p-3 text-xl font-medium flex justify-between items-center">
+            <div className="p-3 text-xl font-medium flex justify-between items-center border-b">
                 <div className="flex gap-1 items-center">
                     <div className="">Jobs</div>
                     <div className="text-xs text-zinc-600 dark:text-zinc-400">(36 results)</div>
@@ -22,8 +20,8 @@ function JobList({ jobs, onSelect, selectedJob }: JobListProps) {
             </div>
             {jobs.map((job) => (
                 <Link to={`/job/${job.id}`} key={job.id}
-                    className={`border-b p-3 flex gap-2 w-full hover:bg-zinc-200/60 dark:hover:bg-zinc-800/40 cursor-pointer transition-all duration-200 group ${selectedJob?.id === job.id ? 'bg-zinc-200/60 dark:bg-zinc-700/20' : ''}`}
-                    onClick={() => onSelect(job)}
+                    className={`border-b p-3 flex gap-2 w-full hover:bg-zinc-200/60 dark:hover:bg-zinc-800/40 cursor-pointer transition-all duration-200 group `}
+                    
                 >
                     <img src={job.logo} loading="lazy" alt={job.company} className="w-12 h-12 rounded-lg" />
                     <div className="flex jusitfy-between w-full">
