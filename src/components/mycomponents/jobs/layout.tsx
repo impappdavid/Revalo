@@ -2,7 +2,7 @@ import { useState } from "react";
 import Sidebar from "../sidebar";
 import type { Job } from "./types";
 import JobList from "./jobList";
-import JobInfo from "./jobInfo";
+import JobFilter from "./jobFilter";
 
 const jobs: Job[] = [
     {
@@ -41,7 +41,7 @@ function JobsLayout() {
                     <JobList jobs={jobs} onSelect={setSelectedJob} selectedJob={selectedJob}/>
                 </div>
                 <div className="w-full lg:max-w-76 hidden lg:flex items-center gap-2 flex-col">
-                    <JobInfo job={selectedJob} />
+                    <JobFilter />
                 </div>
             </div>
         </div>
