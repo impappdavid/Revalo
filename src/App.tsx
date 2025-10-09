@@ -11,6 +11,7 @@ import Photos from './pages/Photos';
 import Clips from './pages/Clips';
 import { Analytics } from "@vercel/analytics/react"
 import Music from './pages/Music';
+import Jobs from './pages/Jobs';
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
               <Route path="photos" element={<Photos />} />
               <Route path="clips" element={<Clips />} />
               <Route path="music" element={<Music />} />
+              <Route path="jobs" element={<Jobs />} />
             </Route>
           </Routes>
         </BrowserRouter>
