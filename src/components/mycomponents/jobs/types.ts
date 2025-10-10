@@ -9,4 +9,5 @@ export interface Job {
     description: string;
     role: string;
     posted: string;
+    salary: string;
 }
