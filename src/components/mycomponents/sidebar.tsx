@@ -48,12 +48,7 @@ function Sidebar() {
                     </svg>
                     <div className="text-sm">Music</div>
                 </Link>
-                <Link to={"/videos"} className="w-full py-1.5 px-1.5 hover:bg-zinc-200/80 dark:hover:bg-zinc-900 rounded-lg transition-all duration-200 flex items-center gap-2 cursor-pointer">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" className="fill-blue-500 dark:fill-blue-400">
-                        <path d="M7 11.252V6.756a.75.75 0 0 1 1.171-.62l3.61 2.45a.5.5 0 0 1 .001.828l-3.61 2.458A.75.75 0 0 1 7 11.252M2 5.5A2.5 2.5 0 0 1 4.5 3h9A2.5 2.5 0 0 1 16 5.5v7a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 2 12.5zM4.5 4A1.5 1.5 0 0 0 3 5.5v7A1.5 1.5 0 0 0 4.5 14h9a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 13.5 4zm0 12c.456.607 1.182 1 2 1H14a4 4 0 0 0 4-4V7.5c0-.818-.393-1.544-1-2V13a3 3 0 0 1-3 3z" />
-                    </svg>
-                    <div className="text-sm">Videos</div>
-                </Link>
+                
                 <Link to={"/clips"} className="w-full py-1 px-1.5 hover:bg-zinc-200/80 dark:hover:bg-zinc-900 rounded-lg transition-all duration-200 flex items-center gap-2 cursor-pointer">
                     <GalleryVerticalEnd className="text-blue-500 dark:text-blue-400 w-4.5 h-4.5" />
                     <div className="text-sm">Clips</div>
