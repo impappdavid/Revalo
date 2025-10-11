@@ -1,3 +1,28 @@
+import React from "react"
+
+const data = [
+    {
+        imageSource: "/images/market1.jpg",
+        itemPrice: "$14,599.99",
+        itemName: "Used BMW",
+    },
+    {
+        imageSource: "/images/market2.jpg",
+        itemPrice: "$69.99",
+        itemName: "Hoodie",
+    },
+    {
+        imageSource: "/images/market3.jpg",
+        itemPrice: "$56,199",
+        itemName: "BMW new sport car",
+    },
+    {
+        imageSource: "/images/market4.jpg",
+        itemPrice: "$449.99",
+        itemName: "Modern Sofa",
+    },
+]
+
 function TopSellers() {
     return (
         <>
@@ -8,23 +33,22 @@ function TopSellers() {
                 </div>
 
                 <div className="grid grid-cols-5 gap-3">
-                    <div className="flex flex-col gap-1  cursor-pointer">
-                        <img src="/images/market1.jpg" alt="product.jpg" loading="lazy" className="rounded-xl h-52 object-cover" />
-                        <div className="flex flex-col px-0.5">
-                            <div className="font-medium text-sm">$14599.99</div>
-                            <div className="text-xs text-zinc-400">Used BMW</div>
+                    {data.map((item, index) => (
+                        <div key={index} className="flex flex-col gap-1 cursor-pointer">
+                            <img src={item.imageSource}
+                                alt={item.itemName}
+                                loading="lazy"
+                                decoding="async"
+                                className="rounded-xl aspect-[3/4] object-cover w-full" />
+                            <div className="flex flex-col px-0.5">
+                                <div className="font-medium text-sm">{item.itemPrice}</div>
+                                <div className="text-xs text-zinc-400">{item.itemName}</div>
+                            </div>
                         </div>
-                    </div>
-                    <div className="flex flex-col gap-1 cursor-pointer">
-                        <img src="/images/market2.jpg" alt="product.jpg" loading="lazy" className="rounded-xl h-52 object-cover" />
-                        <div className="flex flex-col px-0.5">
-                            <div className="font-medium text-sm">$69.99</div>
-                            <div className="text-xs text-zinc-400">Hoodie</div>
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </div>
         </>
     )
 }
-export default TopSellers
+export default React.memo(TopSellers)

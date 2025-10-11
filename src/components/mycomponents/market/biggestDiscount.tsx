@@ -1,3 +1,15 @@
+import React from "react"
+
+const data = [
+    {
+        imageSource: "/images/market5.jpg",
+        itemPrice: "$28.99",
+        discountedPrice: "15.99",
+        itemName: "Used BMW",
+        percentage: "50%"
+    },
+]
+
 function BiggestDiscount() {
     return (
         <>
@@ -8,26 +20,29 @@ function BiggestDiscount() {
                 </div>
 
                 <div className="grid grid-cols-5 gap-3">
-                    <div className="flex flex-col gap-1 cursor-pointer">
-                        <div className="relative">
-                            <img src="/images/market5.jpg" alt="product.jpg" loading="lazy" className="rounded-xl w-full h-52 object-cover" />
-                            <div className="absolute top-2 right-2 px-2 py-0.5 bg-green-500/40 backdrop-blur-2xl rounded-sm text-xs">
-                                -50%
+                    {data.map((item, index) => (
+                        <div key={index} className="flex flex-col gap-1 cursor-pointer">
+                            <div className="relative">
+                                <img src={item.imageSource} alt={item.itemName} loading="lazy" decoding="async" className="rounded-xl w-full h-52 object-cover" />
+                                <div className="absolute top-2 right-2 px-2 py-0.5 bg-green-600/50 backdrop-blur-2xl rounded-sm text-xs">
+                                    {item.percentage}
+                                </div>
                             </div>
-                        </div>
-                        <div className="flex flex-col px-0.5 w-full">
-                            <div className="flex justify-between w-full">
+                            <div className="flex flex-col px-0.5 w-full">
+                                <div className="flex justify-between w-full">
 
-                                <div className="font-medium text-sm text-green-400">$15.99</div>
-                                <div className="font-medium text-sm line-through text-red-400">$29.99</div>
+                                    <div className="font-medium text-sm text-green-400">{item.discountedPrice}</div>
+                                    <div className="font-medium text-sm line-through text-red-400">{item.itemPrice}</div>
+                                </div>
+                                <div className="text-xs text-zinc-400">{item.itemName}</div>
                             </div>
-                            <div className="text-xs text-zinc-400">Streetwear T-shirt</div>
                         </div>
-                    </div>
-                    
+                    ))}
+
+
                 </div>
             </div>
         </>
     )
 }
-export default BiggestDiscount
+export default React.memo(BiggestDiscount)

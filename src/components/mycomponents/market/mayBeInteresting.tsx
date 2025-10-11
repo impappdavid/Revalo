@@ -3,7 +3,7 @@ import React from "react"
 const data = [
     {
         imageSource: "/images/market1.jpg",
-        itemPrice: "$14599.99",
+        itemPrice: "$14,599.99",
         itemName: "Used BMW",
     },
     {
