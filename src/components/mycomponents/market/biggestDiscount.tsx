@@ -10,16 +10,16 @@ function BiggestDiscount() {
                 <div className="grid grid-cols-5 gap-3">
                     <div className="flex flex-col gap-1 cursor-pointer">
                         <div className="relative">
-                            <img src="/images/market1.jpg" alt="product.jpg" loading="lazy" className="rounded-xl w-full h-52 object-fit" />
-                            <div className="absolute top-2 right-2 px-2 py-0.5 bg-green-500/20 backdrop-blur-2xl rounded-sm text-xs">
+                            <img src="/images/market5.jpg" alt="product.jpg" loading="lazy" className="rounded-xl w-full h-52 object-cover" />
+                            <div className="absolute top-2 right-2 px-2 py-0.5 bg-green-500/40 backdrop-blur-2xl rounded-sm text-xs">
                                 -50%
                             </div>
                         </div>
                         <div className="flex flex-col px-0.5 w-full">
                             <div className="flex justify-between w-full">
 
-                                <div className="font-medium text-sm text-green-400">$29.99</div>
-                                <div className="font-medium text-sm line-through text-red-400">$59.99</div>
+                                <div className="font-medium text-sm text-green-400">$15.99</div>
+                                <div className="font-medium text-sm line-through text-red-400">$29.99</div>
                             </div>
                             <div className="text-xs text-zinc-400">Streetwear T-shirt</div>
                         </div>

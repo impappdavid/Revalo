@@ -9,17 +9,17 @@ function TopSellers() {
 
                 <div className="grid grid-cols-5 gap-3">
                     <div className="flex flex-col gap-1  cursor-pointer">
-                        <img src="/images/market1.jpg" alt="product.jpg" loading="lazy" className="rounded-xl h-52 object-fit" />
+                        <img src="/images/market1.jpg" alt="product.jpg" loading="lazy" className="rounded-xl h-52 object-cover" />
                         <div className="flex flex-col px-0.5">
-                            <div className="font-medium text-sm">$59.99</div>
-                            <div className="text-xs text-zinc-400">Streetwear T-shirt</div>
+                            <div className="font-medium text-sm">$14599.99</div>
+                            <div className="text-xs text-zinc-400">Used BMW</div>
                         </div>
                     </div>
                     <div className="flex flex-col gap-1 cursor-pointer">
-                        <img src="/images/market2.jpg" alt="product.jpg" loading="lazy" className="rounded-xl h-52 object-fit" />
+                        <img src="/images/market2.jpg" alt="product.jpg" loading="lazy" className="rounded-xl h-52 object-cover" />
                         <div className="flex flex-col px-0.5">
-                            <div className="font-medium text-sm">$9.99</div>
-                            <div className="text-xs text-zinc-400">Plain White T-shirt</div>
+                            <div className="font-medium text-sm">$69.99</div>
+                            <div className="text-xs text-zinc-400">Hoodie</div>
                         </div>
                     </div>
                 </div>
