@@ -20,18 +20,18 @@ function Menu() {
                             <Search className="pointer-events-none absolute left-2 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-muted-foreground" />
                             <Input
                                 type="text"
-                                placeholder="Search communities"
+                                placeholder="Search Market"
                                 className="pl-9 w-full h-7 border-none rounded-lg transition-all duration-200"
                                 value={searchValue}
                                 onChange={(e) => setSearchValue(e.target.value)}
                             />
                         </div>
                     </div>
-                    <div className="w-24 flex gap-2 items-center border-l pl-2 group cursor-pointer">
+                    <div className="w-20 flex gap-2 items-center border-l pl-2 group cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" className="stroke-zinc-400 group-hover:stroke-white transition duration-200">
                             <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16.5 21a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3m-8 0a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3M3.71 5.4h15.214c1.378 0 2.373 1.27 1.995 2.548l-1.654 5.6C19.01 14.408 18.196 15 17.27 15H8.112c-.927 0-1.742-.593-1.996-1.452zm0 0L3 3" />
                         </svg>
-                        <div className="text-sm text-zinc-400 group-hover:text-white transition duration-200">Catalog</div>
+                        <div className="text-sm text-zinc-400 group-hover:text-white transition duration-200">Cart</div>
                     </div>
                 </div>
 
@@ -118,8 +118,8 @@ function Menu() {
                         <div className="bg-sky-400/20 w-12 h-12 flex justify-center items-center rounded-xl">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 36 36" className="fill-sky-400">
                                 <path  d="M15 17h3v2h-3z" className="clr-i-outline clr-i-outline-path-1" />
-                                <path  d="M26.45 14.17A22.1 22.1 0 0 0 19.38 7a9.64 9.64 0 0 0-9-.7a8.6 8.6 0 0 0-4.82 6.4c-.08.47-.14.92-.2 1.36A4 4 0 0 0 2 18v6.13a2 2 0 0 0 2 2V18a2 2 0 0 1 2-2h18.73A7.28 7.28 0 0 1 32 23.27V24h-2a4.53 4.53 0 1 0 .33 2H32a2 2 0 0 0 2-2v-.73a9.28 9.28 0 0 0-7.55-9.1M11 14H6.93c0-.31.09-.63.15-1A6.52 6.52 0 0 1 11 8Zm2 0V7.58a8.17 8.17 0 0 1 5.36 1.16A19 19 0 0 1 23.9 14Zm12.8 14.38a2.5 2.5 0 1 1 2.5-2.5a2.5 2.5 0 0 1-2.5 2.5" class="clr-i-outline clr-i-outline-path-2" />
-                                <path  d="M14.17 24a4.53 4.53 0 1 0 .33 2h5.3v-.25A6 6 0 0 1 20 24ZM10 28.38a2.5 2.5 0 1 1 2.5-2.5a2.5 2.5 0 0 1-2.5 2.5" class="clr-i-outline clr-i-outline-path-3" />
+                                <path  d="M26.45 14.17A22.1 22.1 0 0 0 19.38 7a9.64 9.64 0 0 0-9-.7a8.6 8.6 0 0 0-4.82 6.4c-.08.47-.14.92-.2 1.36A4 4 0 0 0 2 18v6.13a2 2 0 0 0 2 2V18a2 2 0 0 1 2-2h18.73A7.28 7.28 0 0 1 32 23.27V24h-2a4.53 4.53 0 1 0 .33 2H32a2 2 0 0 0 2-2v-.73a9.28 9.28 0 0 0-7.55-9.1M11 14H6.93c0-.31.09-.63.15-1A6.52 6.52 0 0 1 11 8Zm2 0V7.58a8.17 8.17 0 0 1 5.36 1.16A19 19 0 0 1 23.9 14Zm12.8 14.38a2.5 2.5 0 1 1 2.5-2.5a2.5 2.5 0 0 1-2.5 2.5" className="clr-i-outline clr-i-outline-path-2" />
+                                <path  d="M14.17 24a4.53 4.53 0 1 0 .33 2h5.3v-.25A6 6 0 0 1 20 24ZM10 28.38a2.5 2.5 0 1 1 2.5-2.5a2.5 2.5 0 0 1-2.5 2.5" className="clr-i-outline clr-i-outline-path-3" />
                                 <path fill="none" d="M0 0h36v36H0z" />
                             </svg>
                         </div>

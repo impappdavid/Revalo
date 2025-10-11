@@ -1,5 +1,8 @@
 import Sidebar from "../sidebar"
+import BiggestDiscount from "./biggestDiscount"
+import MayBeInteresting from "./mayBeInteresting"
 import Menu from "./menu"
+import TopSellers from "./topSellers"
 
 function MarketLayout() {
     return (
@@ -10,6 +13,9 @@ function MarketLayout() {
                     <div className="w-full hidden sm:flex max-w-40"></div>
                     <div className="flex flex-col w-full relative gap-4">
                         <Menu />
+                        <MayBeInteresting />
+                        <TopSellers />
+                        <BiggestDiscount />
                     </div>
 
                 </div>
