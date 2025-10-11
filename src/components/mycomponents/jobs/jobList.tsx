@@ -49,11 +49,18 @@ function JobList({ jobs }: JobListProps) {
                             </div>
                         </div>
                         <div className="flex gap-1">
+                            {job.applied ? (
+                                <div className="py-1 px-2 border rounded-lg">
+                                    <div className="text-xs text-blue-500 dark:text-emerald-500">Applied</div>
+                                </div>
+                            ) : job.viewed ? (
+                                <div className="py-1 px-2 border rounded-lg">
+                                    <div className="text-xs text-blue-500 dark:text-emerald-500">Applied</div>
+                                </div>
+                            ) : ""}
+
                             <div className="py-1 px-2 border rounded-lg">
-                                <div className="text-xs text-blue-500 dark:text-emerald-500">Applied</div>
-                            </div>
-                            <div className="py-1 px-2 border rounded-lg">
-                                <div className="text-xs text-blue-500 dark:text-blue-400">3/6 skills</div>
+                                <div className="text-xs text-blue-500 dark:text-blue-400">{job.skillmatch}/{job.allSkills} skills</div>
                             </div>
                         </div>
                     </div>

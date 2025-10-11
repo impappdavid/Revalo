@@ -19,7 +19,7 @@ function Sidebar() {
                     <MessageCircle className="text-blue-500 dark:text-blue-400 w-4.5 h-4.5" />
                     <div className="text-sm">Messenger</div>
                 </Link>
-                
+
                 <Link to={"friends"} className="w-full py-1.5 px-1.5 hover:bg-zinc-200/80 dark:hover:bg-zinc-900 rounded-lg transition-all duration-200 flex items-center gap-2 cursor-pointer">
                     <Users className="text-blue-500 dark:text-blue-400 w-4.5 h-4.5" />
                     <div className="text-sm">Friends</div>
@@ -69,6 +69,16 @@ function Sidebar() {
                     <div className="text-sm">Stickers</div>
                 </Link>
                 <Link to={"/market"} className="w-full py-1.5 px-1.5 hover:bg-zinc-200/80 dark:hover:bg-zinc-900 rounded-lg transition-all duration-200 flex items-center gap-2 cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 512 512" className="stroke-blue-500 dark:stroke-blue-400">
+                        <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M322 416c0 35.35-20.65 64-56 64H134c-35.35 0-56-28.65-56-64m258-80c17.67 0 32 17.91 32 40h0c0 22.09-14.33 40-32 40H64c-17.67 0-32-17.91-32-40h0c0-22.09 14.33-40 32-40" />
+                        <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M344 336H179.31a8 8 0 0 0-5.65 2.34l-26.83 26.83a4 4 0 0 1-5.66 0l-26.83-26.83a8 8 0 0 0-5.65-2.34H56a24 24 0 0 1-24-24h0a24 24 0 0 1 24-24h288a24 24 0 0 1 24 24h0a24 24 0 0 1-24 24ZM64 276v-.22c0-55 45-83.78 100-83.78h72c55 0 100 29 100 84v-.22M241 112l7.44 63.97" />
+                        <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M256 480h139.31a32 32 0 0 0 31.91-29.61L463 112" />
+                        <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="m368 112l16-64l47-16" />
+                        <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M224 112h256" />
+                    </svg>
+                    <div className="text-sm">Order</div>
+                </Link>
+                <Link to={"/market"} className="w-full py-1.5 px-1.5 hover:bg-zinc-200/80 dark:hover:bg-zinc-900 rounded-lg transition-all duration-200 flex items-center gap-2 cursor-pointer">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" className="fill-blue-500 dark:fill-blue-400">
                         <path d="M16 9a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-6 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0" />
                         <path fill-rule="evenodd" d="M12 2.75A2.25 2.25 0 0 0 9.75 5v.254q.626-.005 1.355-.004h1.79q.73-.001 1.355.004V5A2.25 2.25 0 0 0 12 2.75m3.75 2.557V5a3.75 3.75 0 0 0-7.5 0v.307q-.202.014-.391.035c-.878.095-1.613.293-2.265.74a5 5 0 0 0-.63.516c-.566.552-.905 1.234-1.17 2.076c-.257.819-.465 1.859-.727 3.166l-.019.095c-.376 1.883-.673 3.367-.758 4.549c-.088 1.208.034 2.223.606 3.104q.288.442.664.81c.752.734 1.724 1.052 2.925 1.204c1.176.148 2.69.148 4.61.148h1.81c1.921 0 3.434 0 4.61-.148c1.201-.152 2.174-.47 2.925-1.204a4.8 4.8 0 0 0 .664-.81c.572-.88.694-1.896.607-3.104c-.086-1.182-.382-2.666-.76-4.549l-.018-.095c-.261-1.307-.47-2.347-.727-3.166c-.265-.842-.604-1.524-1.17-2.076a5 5 0 0 0-.63-.516c-.652-.447-1.387-.645-2.265-.74a11 11 0 0 0-.39-.035M8.02 6.833c-.747.08-1.208.233-1.578.486a3.3 3.3 0 0 0-.431.354c-.321.313-.56.735-.786 1.451c-.23.733-.424 1.693-.695 3.052c-.39 1.948-.667 3.34-.744 4.416c-.077 1.062.052 1.693.368 2.179q.196.302.454.554c.415.405 1.008.655 2.065.789c1.07.135 2.49.136 4.476.136h1.703c1.986 0 3.404-.001 4.475-.136c1.057-.134 1.65-.384 2.065-.789a3.3 3.3 0 0 0 .454-.554c.316-.486.445-1.117.369-2.18c-.078-1.076-.355-2.467-.744-4.415c-.272-1.359-.465-2.32-.696-3.052c-.225-.716-.465-1.138-.786-1.451a3 3 0 0 0-.43-.354c-.37-.253-.832-.405-1.579-.486c-.763-.082-1.743-.083-3.129-.083H11.15c-1.386 0-2.366.001-3.13.083" clip-rule="evenodd" />
@@ -95,7 +105,7 @@ function Sidebar() {
                     <div className="text-sm">Bookmarks</div>
                 </Link>
                 <Link to={""} className="w-full py-1.5 px-1.5 hover:bg-zinc-200/80 dark:hover:bg-zinc-900 rounded-lg transition-all duration-200 flex items-center gap-2 cursor-pointer">
-                    <CircleQuestionMark className="text-blue-500 dark:text-blue-400 w-4.5 h-4.5"/>
+                    <CircleQuestionMark className="text-blue-500 dark:text-blue-400 w-4.5 h-4.5" />
                     <div className="text-sm">Help</div>
                 </Link>
                 <div className="text-xs text-zinc-400 px-2 pt-2">Revalo 2025</div>

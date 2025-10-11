@@ -14,7 +14,11 @@ const jobs: Job[] = [
         description: "Lorem Ipsum is simply dummy text of the printing...",
         role: "Lorem Ipsum is simply dummy text of the printing...",
         posted: "5h ago",
-        salary: "$120k - $140k"
+        salary: "$120k - $140k",
+        applied: true,
+        viewed: true,
+        skillmatch: "4",
+        allSkills: 6,
     },
     {
         id: 2,
@@ -26,7 +30,11 @@ const jobs: Job[] = [
         description: "Sample description for Data Engineer...",
         role: "Role overview for Data Engineer...",
         posted: "10h ago",
-        salary: "$80k - $100k"
+        salary: "$80k - $100k",
+        applied: false,
+        viewed: false,
+        skillmatch: "1",
+        allSkills: 9,
     },
 ];
 

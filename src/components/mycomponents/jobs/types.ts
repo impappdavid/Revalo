@@ -10,4 +10,8 @@ export interface Job {
     role: string;
     posted: string;
     salary: string;
+    applied: boolean;
+    viewed: boolean;
+    skillmatch: string;
+    allSkills: number;
 }
