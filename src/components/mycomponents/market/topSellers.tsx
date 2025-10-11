@@ -8,14 +8,14 @@ function TopSellers() {
                 </div>
 
                 <div className="grid grid-cols-5 gap-3">
-                    <div className="flex flex-col gap-1 hover:opacity-80 transition-all duration-200 cursor-pointer">
+                    <div className="flex flex-col gap-1  cursor-pointer">
                         <img src="/images/market1.jpg" alt="product.jpg" loading="lazy" className="rounded-xl h-52 object-fit" />
                         <div className="flex flex-col px-0.5">
                             <div className="font-medium text-sm">$59.99</div>
                             <div className="text-xs text-zinc-400">Streetwear T-shirt</div>
                         </div>
                     </div>
-                    <div className="flex flex-col gap-1 hover:opacity-80 transition-all duration-200 cursor-pointer">
+                    <div className="flex flex-col gap-1 cursor-pointer">
                         <img src="/images/market2.jpg" alt="product.jpg" loading="lazy" className="rounded-xl h-52 object-fit" />
                         <div className="flex flex-col px-0.5">
                             <div className="font-medium text-sm">$9.99</div>

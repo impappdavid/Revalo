@@ -8,7 +8,7 @@ function BiggestDiscount() {
                 </div>
 
                 <div className="grid grid-cols-5 gap-3">
-                    <div className="flex flex-col gap-1 hover:opacity-80 transition-all duration-200 cursor-pointer">
+                    <div className="flex flex-col gap-1 cursor-pointer">
                         <div className="relative">
                             <img src="/images/market1.jpg" alt="product.jpg" loading="lazy" className="rounded-xl w-full h-52 object-fit" />
                             <div className="absolute top-2 right-2 px-2 py-0.5 bg-green-500/20 backdrop-blur-2xl rounded-sm text-xs">
