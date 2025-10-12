@@ -13,6 +13,7 @@ import { Analytics } from "@vercel/analytics/react"
 import Music from './pages/Music';
 import Jobs from './pages/Jobs';
 import Market from './pages/Market';
+import Order from './pages/Order';
 
 function App() {
 
@@ -33,6 +34,7 @@ function App() {
               <Route path="music" element={<Music />} />
               <Route path="jobs" element={<Jobs />} />
               <Route path="market" element={<Market />} />
+              <Route path="order" element={<Order />} />
             </Route>
           </Routes>
         </BrowserRouter>
