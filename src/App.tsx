@@ -14,6 +14,7 @@ import Music from './pages/Music';
 import Jobs from './pages/Jobs';
 import Market from './pages/Market';
 import Order from './pages/Order';
+import SpecificOrder from './pages/SpecificOrder';
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
               <Route path="jobs" element={<Jobs />} />
               <Route path="market" element={<Market />} />
               <Route path="order" element={<Order />} />
+              <Route path="order/:slug" element={<SpecificOrder />} />
             </Route>
           </Routes>
         </BrowserRouter>
