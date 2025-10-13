@@ -1,6 +1,6 @@
 // Updated MyOrder.tsx
 import { Separator } from "@/components/ui/separator"
-import { MapPin, Minus, Plus, Trash } from "lucide-react"
+import { MapPin, Minus, Plus } from "lucide-react"
 
 interface CartItem {
   name: string;
