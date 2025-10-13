@@ -58,10 +58,9 @@ function MyOrder({ cartItems, onUpdateQuantity, totalPrice }: MyOrderProps) {
           ))
         )}
       </div>
-      <Separator />
-      <div className="flex justify-between items-center font-medium text-white">
-        <div>Total</div>
-        <div>${totalPrice.toFixed(2)}</div>
+
+      <div className="flex justify-center items-center font-medium text-white p-2 bg-blue-500/80 hover:bg-blue-500 rounded-lg cursor-pointer transition-all duration-200">
+        <div>Checkout for ${totalPrice.toFixed(2)}</div>
       </div>
     </div>
   );
