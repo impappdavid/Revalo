@@ -1,4 +1,4 @@
-import { CircleQuestionMark, CircleUser, GalleryVerticalEnd, Gamepad2, MessageCircle, Users } from "lucide-react"
+import { CircleQuestionMark, CircleUser, GalleryVerticalEnd, MessageCircle, Users } from "lucide-react"
 import { Link } from "react-router-dom"
 
 function Sidebar() {
@@ -54,12 +54,7 @@ function Sidebar() {
                     <div className="text-sm">Clips</div>
                 </Link>
                 
-                <Link to={"/stickers"} className="w-full py-1.5 px-1.5 hover:bg-zinc-200/80 dark:hover:bg-zinc-900 rounded-lg transition-all duration-200 flex items-center gap-2 cursor-pointer">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 28 28" className="fill-blue-500 dark:fill-blue-400">
-                        <path d="M9.566 16.51q-.003-.005 0 0M10 8a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3m8 0a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3m3-5a4 4 0 0 1 4 4v7.343c0 1.26-.5 2.468-1.392 3.36l-5.906 5.905A4.75 4.75 0 0 1 14.342 25H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zM7 4.5A2.5 2.5 0 0 0 4.5 7v14A2.5 2.5 0 0 0 7 23.5h7.343q.334-.001.657-.068v-3.985a10 10 0 0 1-1 .053c-1.88 0-3.252-.472-4.168-.965a6 6 0 0 1-1.025-.687a2.8 2.8 0 0 1-.423-.42a.75.75 0 0 1 1.182-.918c.013.006.025.025.036.035q.05.052.17.154c.16.135.414.324.771.516c.71.382 1.838.785 3.457.785c.353 0 1.018-.04 1.018-.04c0-1.93 1.903-3.46 3.732-3.46h4.746q.004-.078.004-.157V7A2.5 2.5 0 0 0 21 4.5zM18.75 16a2.25 2.25 0 0 0-2.25 2.25v4.43q.072-.064.142-.132l5.906-5.906q.291-.293.498-.642z" />
-                    </svg>
-                    <div className="text-sm">Stickers</div>
-                </Link>
+                
                 <Link to={"/order"} className="w-full py-1.5 px-1.5 hover:bg-zinc-200/80 dark:hover:bg-zinc-900 rounded-lg transition-all duration-200 flex items-center gap-2 cursor-pointer">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 512 512" className="stroke-blue-500 dark:stroke-blue-400">
                         <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M322 416c0 35.35-20.65 64-56 64H134c-35.35 0-56-28.65-56-64m258-80c17.67 0 32 17.91 32 40h0c0 22.09-14.33 40-32 40H64c-17.67 0-32-17.91-32-40h0c0-22.09 14.33-40 32-40" />
