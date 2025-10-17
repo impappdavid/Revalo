@@ -17,10 +17,10 @@ interface MyOrderProps {
 
 function MyOrder({ cartItems, onUpdateQuantity, totalPrice }: MyOrderProps) {
   return (
-    <div className="bg-zinc-900 border-y border-r h-[900px] rounded-r-2xl p-4 w-full flex flex-col gap-2">
+    <div className="bg-white dark:bg-zinc-900 border-y border-r h-[900px] rounded-r-2xl p-4 w-full flex flex-col gap-2">
       <div className="flex justify-between w-full items-center">
-        <div className="font-medium text-lg text-white">My Order</div>
-        <div className="p-1 px-1.5 text-zinc-400 hover:bg-zinc-800 rounded-md cursor-pointer transition-all duration-200 hover:text-white flex gap-1">
+        <div className="font-medium text-lg text-black dark:text-white">My Order</div>
+        <div className="p-1 px-1.5 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200/80 dark:hover:bg-zinc-800 rounded-md cursor-pointer transition-all duration-200 hover:text-black dark:hover:text-white flex gap-1">
           <MapPin className="w-4 h-4"/>
           <div className="text-xs">Budapest ...</div>
         </div>
@@ -35,20 +35,20 @@ function MyOrder({ cartItems, onUpdateQuantity, totalPrice }: MyOrderProps) {
               <div className="flex gap-2 items-center">
                 <img src={item.image} alt={item.name} className="w-10 h-10 object-cover rounded-lg" />
                 <div className="flex flex-col">
-                  <div className="font-medium text-white">{item.name}</div>
-                  <div className="text-xs text-zinc-400 font-medium">${(item.price * item.quantity).toFixed(2)}</div>
+                  <div className="font-medium text-black dark:text-white">{item.name}</div>
+                  <div className="text-xs text-zinc-600 dark:text-zinc-400 font-medium">${(item.price * item.quantity).toFixed(2)}</div>
                 </div>
               </div>
               <div className="flex gap-2 items-center">
                 <div 
-                  className="w-7 h-7 flex items-center justify-center bg-zinc-800/60 rounded-lg text-zinc-400 cursor-pointer hover:bg-zinc-800 transition-all duration-200"
+                  className="w-7 h-7 flex items-center justify-center bg-zinc-200/80 dark:bg-zinc-800/60 rounded-lg text-zinc-600 dark:text-zinc-400 cursor-pointer hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-all duration-200"
                   onClick={() => onUpdateQuantity(item.name, -1)}
                 >
                   <Minus className="w-3 h-3" />
                 </div>
-                <div className="font-medium text-white">{item.quantity}</div>
+                <div className="font-medium text-black dark:text-white">{item.quantity}</div>
                 <div 
-                  className="w-7 h-7 flex items-center justify-center bg-zinc-800/60 rounded-lg text-zinc-400 cursor-pointer hover:bg-zinc-800 transition-all duration-200"
+                  className="w-7 h-7 flex items-center justify-center bg-zinc-200/80 dark:bg-zinc-800/60 rounded-lg text-zinc-600 dark:text-zinc-400 cursor-pointer hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-all duration-200"
                   onClick={() => onUpdateQuantity(item.name, 1)}
                 >
                   <Plus className="w-3 h-3" />

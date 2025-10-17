@@ -36,7 +36,7 @@ function DropDown() {
             <DropdownMenu>
                 <DropdownMenuTrigger className="outline-none">
 
-                    <div className="p-2 hover:bg-zinc-800/80 rounded-lg text-zinc-400 cursor-pointer transition-all duration-200">
+                    <div className="p-2 hover:bg-zinc-200/80 dark:hover:bg-zinc-800/80 rounded-lg text-zinc-600 dark:text-zinc-400 cursor-pointer transition-all duration-200">
                         <Ellipsis className="w-4 h-4 " />
                     </div>
 

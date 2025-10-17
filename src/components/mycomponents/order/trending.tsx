@@ -62,21 +62,21 @@ function Trending() {
                         </div>
                         <div className="flex flex-col px-0.5 w-full">
                             <div className="flex justify-between w-full">
-                                <div className="font-medium text-white">{item.name}</div>
+                                <div className="font-medium text-black dark:text-white">{item.name}</div>
                             </div>
                             <div className="flex gap-1 items-center">
-                                <div className="flex gap-0.5 text-xs items-center text-zinc-400 ">
+                                <div className="flex gap-0.5 text-xs items-center text-zinc-600 dark:text-zinc-400 ">
                                     {item.star}
-                                    <Star className="w-3.5 h-3.5 fill-zinc-400" />
+                                    <Star className="w-3.5 h-3.5 fill-zinc-600 dark:fill-zinc-400" />
                                     ({item.reviews})
                                 </div>
-                                <div className="h-1 w-1 bg-zinc-400 rounded-full"></div>
-                                <div className="text-xs text-zinc-400 ">{item.distance} km</div>
-                                <div className="h-1 w-1 bg-zinc-400 rounded-full"></div>
-                                <div className="text-xs text-zinc-400 ">{item.deliveryTime} min</div>
+                                <div className="h-1 w-1 bg-zinc-600 dark:bg-zinc-400 rounded-full"></div>
+                                <div className="text-xs text-zinc-600 dark:text-zinc-400 ">{item.distance} km</div>
+                                <div className="h-1 w-1 bg-zinc-600 dark:bg-zinc-400 rounded-full"></div>
+                                <div className="text-xs text-zinc-600 dark:text-zinc-400 ">{item.deliveryTime} min</div>
                             </div>
                             <div className="flex gap-1 items-center">
-                                <div className="text-xs text-zinc-400 ">${item.deliveryFee} delivery fee</div>
+                                <div className="text-xs text-zinc-600 dark:text-zinc-400 ">${item.deliveryFee} delivery fee</div>
                             </div>
                         </div>
                     </Link>

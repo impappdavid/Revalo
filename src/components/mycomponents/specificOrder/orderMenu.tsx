@@ -40,21 +40,21 @@ function OrderMenu({ onAddToCart }: OrderMenuProps) {
   const [showFavoriteOnly, setShowFavoriteOnly] = useState(false);
 
   return (
-    <div className="bg-zinc-900 border rounded-l-2xl min-h-[900px] w-full">
+    <div className="bg-white dark:bg-zinc-900 border rounded-l-2xl min-h-[900px] w-full">
       <div className="flex justify-between p-2">
         <div className="flex items-center gap-2">
-          <Link to={"/order"} className="p-2 hover:bg-zinc-800/80 rounded-lg cursor-pointer transition-all duration-200">
+          <Link to={"/order"} className="p-2 hover:bg-zinc-200/80 dark:hover:bg-zinc-800/80 rounded-lg cursor-pointer transition-all duration-200">
             <ArrowLeft className="w-4 h-4" />
           </Link>
-          <div className="font-medium text-white">McDonald's</div>
+          <div className="font-medium text-black dark:text-white">McDonald's</div>
         </div>
         <div className="flex items-center gap-2">
           <div className="text-xs flex gap-1 items-center">
-            <Truck className="w-4 h-4 text-zinc-400" />
-            <div className="text-xs text-zinc-400">20 min</div>
+            <Truck className="w-4 h-4 text-zinc-600 dark:text-zinc-400" />
+            <div className="text-xs text-zinc-600 dark:text-zinc-400">20 min</div>
           </div>
           <div className="flex items-center">
-            <div className={`p-2 hover:bg-zinc-800/80 rounded-lg  cursor-pointer transition-all duration-200 ${isMyFavorite ? 'text-yellow-500' : 'text-zinc-400'}`} onClick={() => setIsMyFavorite(!isMyFavorite)}>
+            <div className={`p-2 hover:bg-zinc-200/80 dark:hover:bg-zinc-800/80 rounded-lg  cursor-pointer transition-all duration-200 ${isMyFavorite ? 'text-yellow-500' : 'text-zinc-400'}`} onClick={() => setIsMyFavorite(!isMyFavorite)}>
               <Star className={`w-4 h-4 ${isMyFavorite ? 'fill-yellow-500 ' : 'fill-none'}`} />
             </div>
             <DropDown />
@@ -94,7 +94,7 @@ function OrderMenu({ onAddToCart }: OrderMenuProps) {
                 className="pl-9 w-full h-9 border-none rounded-lg bg-zinc-200/60 hover:bg-zinc-200 dark:bg-zinc-800/60 dark:hover:bg-zinc-800 transition-all duration-200"
               />
             </div>
-            <div className={`p-2.5   rounded-lg  cursor-pointer transition-all duration-200 ${showFavoriteOnly ? "bg-pink-500 text-white hover:bg-pink-500/80" : "bg-zinc-800/60 text-zinc-400 hover:bg-zinc-800"}`} onClick={() => setShowFavoriteOnly(!showFavoriteOnly)}>
+            <div className={`p-2.5   rounded-lg  cursor-pointer transition-all duration-200 ${showFavoriteOnly ? "bg-pink-500 text-white hover:bg-pink-500/80" : "bg-zinc-200/80 dark:bg-zinc-800/60 text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-800"}`} onClick={() => setShowFavoriteOnly(!showFavoriteOnly)}>
               <Heart className="w-4 h-4 " />
             </div>
           </div>
@@ -121,7 +121,7 @@ function OrderMenu({ onAddToCart }: OrderMenuProps) {
                           </div>
                           <div className="flex flex-col px-0.5">
                             <div className="font-medium text-sm">{item.name}</div>
-                            <div className="text-xs text-zinc-400 font-medium">${item.price}</div>
+                            <div className="text-xs text-zinc-600 dark:text-zinc-400 font-medium">${item.price}</div>
                           </div>
                         </div>
                       ) : (
@@ -138,7 +138,7 @@ function OrderMenu({ onAddToCart }: OrderMenuProps) {
                           </div>
                           <div className="flex flex-col px-0.5">
                             <div className="font-medium text-sm">{item.name}</div>
-                            <div className="text-xs text-zinc-400 font-medium">${item.price}</div>
+                            <div className="text-xs text-zinc-600 dark:text-zinc-400 font-medium">${item.price}</div>
                           </div>
                         </div>
                       )}
@@ -166,7 +166,7 @@ function OrderMenu({ onAddToCart }: OrderMenuProps) {
                       </div>
                       <div className="flex flex-col px-0.5">
                         <div className="font-medium text-sm">{item.name}</div>
-                        <div className="text-xs text-zinc-400 font-medium">${item.price}</div>
+                        <div className="text-xs text-zinc-600 dark:text-zinc-400 font-medium">${item.price}</div>
                       </div>
                     </div>
                   ))
@@ -192,7 +192,7 @@ function OrderMenu({ onAddToCart }: OrderMenuProps) {
                       </div>
                       <div className="flex flex-col px-0.5">
                         <div className="font-medium text-sm">{item.name}</div>
-                        <div className="text-xs text-zinc-400 font-medium">${item.price}</div>
+                        <div className="text-xs text-zinc-600 dark:text-zinc-400 font-medium">${item.price}</div>
                       </div>
                     </div>
                   ))}
